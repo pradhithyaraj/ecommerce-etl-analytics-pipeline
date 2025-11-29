@@ -1,95 +1,102 @@
-📘 E-commerce ETL & Analytics Pipeline
+# 📘 E-commerce ETL & Analytics Pipeline
+A complete end-to-end pipeline to extract, clean, transform, analyze, and model e-commerce data using Python. Includes a full ETL workflow, exploratory analysis, visual insights, SQLite storage, and a delivery-delay prediction model.
 
-A complete end-to-end pipeline to extract, clean, transform, analyze, and model e-commerce data using Python.
-(Project report reference: E-commerce Analysis PDF 
+---
 
-README
+## 🚀 Overview
+This project implements a real-world style data engineering workflow on multi-table e-commerce data.  
+The pipeline performs extraction, cleaning, transformation, feature engineering, analytics, and machine learning, producing ready-to-use insights and datasets.
 
-)
+Reference project report: **E-commerce Analysis.pdf** :contentReference[oaicite:0]{index=0}
 
-🚀 Overview
+---
 
-This project builds a real-world style ETL system that processes multi-table e-commerce data and generates analytical insights.
-It includes data cleaning, feature engineering, visualization, SQLite storage, and a delivery-delay prediction model.
+## 🎯 Features
+- Complete ETL pipeline (Extract → Transform → Load)  
+- Data cleaning and preprocessing  
+- Feature engineering for delivery performance  
+- Exploratory Data Analysis (EDA)  
+- Visualizations: revenue trends, categories, states, order status  
+- Random Forest delivery delay prediction  
+- SHAP-based model explainability  
+- SQLite analytical database output  
+- Organized academic-style structure  
 
-🎯 Features
+---
 
-ETL pipeline (Extract → Transform → Load)
+## 🛠 Tech Stack
+- Python  
+- Pandas, NumPy  
+- Matplotlib, Seaborn  
+- Scikit-learn  
+- SHAP  
+- SQLite  
+- Google Colab / Jupyter  
 
-Data quality checks & validation
+---
 
-Feature engineering for delivery performance
-
-Exploratory data analysis & charts (monthly/weekly trends, category & state revenue)
-
-Random Forest delivery delay prediction model
-
-SHAP explainability
-
-SQLite analytical database output
-
-🛠 Tech Stack
-
-Python, Pandas, NumPy
-
-Matplotlib, Seaborn
-
-Scikit-learn
-
-SQLite
-
-Google Colab / Jupyter
-
-📁 Project Structure
+## 📁 Project Structure
 ecommerce-etl-analytics-pipeline/
-│── data/               # Raw & processed datasets
-│── scripts/            # ETL pipeline Python script
-│── outputs/            # Visuals, tables, QC reports
-│── reports/            # Final PDF project report
-│── README.md           # Documentation
+│── data/ # Raw & processed datasets
+│── scripts/ # ETL pipeline python scripts
+│── outputs/ # Visuals, QC reports, tables, ML results
+│── reports/ # PDF project report
+│── README.md # Documentation
 
-▶️ How to Run
+yaml
+Copy code
+
+---
+
+## ▶️ How to Run
+### 1. Clone the repository
 git clone https://github.com/your-username/ecommerce-etl-analytics-pipeline
-cd ecommerce-etl-analytics-pipeline
+
+shell
+Copy code
+
+### 2. Install dependencies
 pip install -r requirements.txt
+
+graphql
+Copy code
+
+### 3. Execute the ETL workflow
 python scripts/etl_pipeline.py
 
+yaml
+Copy code
 
-Outputs will be saved inside /outputs.
+Outputs will be generated in the **/outputs** folder.
 
-📊 Sample Outputs
+---
 
-From the PDF report (page 8–13) you’ll see:
+## 📊 Visual Outputs
+Includes charts such as (see report pages 8–13):  
+- Monthly revenue trend  
+- Weekly revenue trend  
+- Top categories by revenue  
+- Top states by revenue  
+- Order status distribution  
+:contentReference[oaicite:1]{index=1}
 
-Monthly revenue trend
+---
 
-Weekly revenue trend
+## 🤖 Machine Learning Component
+- Random Forest classifier to predict delivery delays  
+- Uses price, freight, review score, delivery duration, and engineered features  
+- Confusion matrix + performance report  
+- SHAP explainability plots  
+- Results stored in **/outputs/tables** and **/outputs/figures**
 
-Category & state revenue charts
+---
 
-Order status distribution
+## 📄 Academic Report
+Full structured project report available at:  
+**reports/E-commerce Analysis.pdf**  
+:contentReference[oaicite:2]{index=2}
 
+---
 
-README
-
-🤖 ML Component
-
-Random Forest classifier
-
-Predicts orders likely to be delayed
-
-SHAP analysis for interpretability
-
-Reports & confusion matrix saved to outputs
-
-📄 Report
-
-Full academic-style project report included in:
-reports/E-commerce Analysis.pdf
-
-
-README
-
-👤 Author
-
-Adhithyaraj P R
+## 👤 Author
+**Adhithyaraj P R**
