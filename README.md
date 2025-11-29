@@ -35,39 +35,18 @@ Reference project report: **E-commerce Analysis.pdf** :contentReference[oaicite:
 
 ---
 
-## 📁 Project Structure
-ecommerce-etl-analytics-pipeline/
-│── data/ # Raw & processed datasets
-│── scripts/ # ETL pipeline python scripts
-│── outputs/ # Visuals, QC reports, tables, ML results
-│── reports/ # PDF project report
-│── README.md # Documentation
-
-yaml
-Copy code
-
----
-
 ## ▶️ How to Run
 ### 1. Clone the repository
 git clone https://github.com/your-username/ecommerce-etl-analytics-pipeline
 
-shell
-Copy code
 
 ### 2. Install dependencies
 pip install -r requirements.txt
 
-graphql
-Copy code
 
 ### 3. Execute the ETL workflow
 python scripts/etl_pipeline.py
 
-yaml
-Copy code
-
-Outputs will be generated in the **/outputs** folder.
 
 ---
 
